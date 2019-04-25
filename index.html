@@ -45,7 +45,7 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="ans1" type="text" class="form-control form-control-lg" placeholder="帥">
+                <input id="ans1" type="text" class="form-control form-control-lg" placeholder="">
               </div>
               <div class="col-12 col-md-3">
                 <button type="button" id="btnans1" class="btn btn-block btn-lg btn-primary">送出</button>
@@ -65,7 +65,7 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="ans2" type="text" class="form-control form-control-lg" placeholder="醜">
+                <input id="ans2" type="text" class="form-control form-control-lg" placeholder="">
               </div>
               <div class="col-12 col-md-3">
                 <button type="button" id="btnans2" class="btn btn-block btn-lg btn-primary">送出</button>
@@ -85,7 +85,7 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="ans3" type="text" class="form-control form-control-lg" placeholder="帥">
+                <input id="ans3" type="text" class="form-control form-control-lg" placeholder="">
               </div>
               <div class="col-12 col-md-3">
                 <button type="button" id="btnans3" class="btn btn-block btn-lg btn-primary">送出</button>
@@ -174,11 +174,13 @@
         alert("答對了!");
         $("#q1").hide();
         $("#q2").show();
+        $("#ans1").val("");
       }
       else
       {
         alert("答錯囉...");
-        $("#ans1").attr("placeholder","答錯囉")
+        $("#ans1").val("");
+        $("#ans1").attr("placeholder","提示: 帥")
       }
     })
     $("#btnans2").on("click", function(){
@@ -187,11 +189,13 @@
         alert("答對了!");
         $("#q2").hide();
         $("#q3").show();
+        $("#ans2").val("");
       }
       else
       {
         alert("答錯囉...");
-        $("#ans2").attr("placeholder","答錯囉")
+        $("#ans2").val("");
+        $("#ans2").attr("placeholder","提示: 醜")
       }
     })
     $("#btnans3").on("click", function(){
@@ -200,11 +204,13 @@
         alert("答對了!");
         $("#q3").hide();
         $("#q4").show();
+        $("#ans3").val("");
       }
       else
       {
         alert("答錯囉...");
-        $("#ans3").attr("placeholder","答錯囉")
+        $("#ans3").val("");
+        $("#ans3").attr("placeholder","提示: 帥")
       }
     })
   </script>
