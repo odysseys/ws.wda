@@ -36,7 +36,7 @@
   <!-- Masthead -->
   <header class="masthead text-white text-center">
     <div class="overlay"></div>
-    <div class="container">
+    <div id="q1" class="container" style="display:block;">
       <div class="row">
         <div class="col-xl-9 mx-auto">
           <h1 class="mb-5">第一題: 金城武帥不帥?</h1>
@@ -45,10 +45,70 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="帥!">
+                <input id="ans1" type="text" class="form-control form-control-lg" placeholder="帥">
               </div>
               <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">送出</button>
+                <button type="button" id="btnans1" class="btn btn-block btn-lg btn-primary">送出</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="q2" class="container" style="display:none">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">第二題: 明金城帥不帥?</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input id="ans2" type="text" class="form-control form-control-lg" placeholder="醜">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="button" id="btnans2" class="btn btn-block btn-lg btn-primary">送出</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="q3" class="container" style="display:none">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">第三題: 大媽帥不帥?</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input id="ans3" type="text" class="form-control form-control-lg" placeholder="帥">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="button" id="btnans3" class="btn btn-block btn-lg btn-primary">送出</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="q4" class="container" style="display:none">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">恭喜全部答對！</h1>
+          <h1 class="mb-5">請出示此畫面給母GG看</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                
+              </div>
+              <div class="col-12 col-md-3">
+                
               </div>
             </div>
           </form>
@@ -107,6 +167,47 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $("#btnans1").on("click", function(){
+      if($("#ans1").val() == "帥")
+      {
+        alert("答對了!");
+        $("#q1").hide();
+        $("#q2").show();
+      }
+      else
+      {
+        alert("答錯囉...");
+        $("#ans1").attr("placeholder","答錯囉")
+      }
+    })
+    $("#btnans2").on("click", function(){
+      if($("#ans2").val() == "醜")
+      {
+        alert("答對了!");
+        $("#q2").hide();
+        $("#q3").show();
+      }
+      else
+      {
+        alert("答錯囉...");
+        $("#ans2").attr("placeholder","答錯囉")
+      }
+    })
+    $("#btnans3").on("click", function(){
+      if($("#ans3").val() == "帥")
+      {
+        alert("答對了!");
+        $("#q3").hide();
+        $("#q4").show();
+      }
+      else
+      {
+        alert("答錯囉...");
+        $("#ans3").attr("placeholder","答錯囉")
+      }
+    })
+  </script>
 
 </body>
 
