@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="Jin Cheng Wu" content="">
+
+  <title>北基宜花金馬分署 青年職涯發展中心 問卷回答</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">北基宜花金馬分署 青年職涯發展中心の問卷回答</a>
+      <!--<a class="btn btn-primary" href="#">Sign In</a>-->
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div id="q10" class="container" style="display:block">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">答對第九題！(9/10)</h1>
+          <h1 class="mb-5">你已經通過第二道試驗(7~9題)，可以憑本畫面向櫃台工作人員領取獎品，或是繼續挑戰最後的難題！</h1>
+          <h1 class="mb-5">所有的線索都已浮現，依循著歷史的軌跡導出最終的解答吧</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="text" style="display: none">
+                <input id="ans10" type="text" class="form-control form-control-lg" placeholder="">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="button" id="btnans10" class="btn btn-block btn-lg btn-primary">送出</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="end" class="container" style="display:none">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">你已經通過第三道試驗(10題)，可以憑本畫面向櫃台工作人員領取獎品，或是繼續挑戰最後的工作人員！</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                
+              </div>
+              <div class="col-12 col-md-3">
+                
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $("#btnans10").on("click", function(){
+      if($("#ans10").val() == "Check Rubik Cube")
+      {
+        $("#q10").hide();
+        $("#end").show();
+        $("#ans10").val("");
+      }
+      else
+      {
+        $("#ans10").val("");
+        $("#ans10").attr("placeholder","答錯囉...再想想")
+      }
+    })
+  </script>
+
+</body>
+
+</html>
