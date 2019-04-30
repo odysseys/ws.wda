@@ -40,7 +40,7 @@
       <div class="row">
         <div class="col-xl-9 mx-auto">
           <h1 class="mb-5">答對第九題！(9/10)</h1>
-          <h1 class="mb-5">你已經通過第二道試驗(7~9題)，可以憑本畫面向櫃台工作人員領取獎品，或是繼續挑戰最後的難題！</h1>
+          <h1 class="mb-5">你已經通過第二道試驗(7~9題)，可以憑本畫面向櫃檯工作人員領取獎品，或是繼續挑戰最後的難題！</h1>
           <h1 class="mb-5">所有的線索都已浮現，依循著歷史的軌跡導出最終的解答吧</h1>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
@@ -62,7 +62,7 @@
     <div id="end" class="container" style="display:none">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">你已經通過第三道試驗(10題)，可以憑本畫面向櫃台工作人員領取獎品，或是繼續挑戰最後的工作人員！</h1>
+          <h1 class="mb-5">恭喜！你已經通過最後的試驗！憑著本畫面向櫃檯人員領取屬於你的榮耀吧！</h1>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form>
@@ -85,7 +85,7 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
     $("#btnans10").on("click", function(){
-      if($("#ans10").val() == "Check Rubik Cube")
+      if($("#ans10").val() == "YS" || $("#ans10").val() == "Ys" || $("#ans10").val() == "yS" || $("#ans10").val() == "ys")
       {
         $("#q10").hide();
         $("#end").show();
