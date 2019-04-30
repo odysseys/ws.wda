@@ -108,10 +108,10 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="ans3" type="text" class="form-control form-control-lg" placeholder="">
+                <input id="ans4" type="text" class="form-control form-control-lg" placeholder="">
               </div>
               <div class="col-12 col-md-3">
-                <button type="button" id="btnans3" class="btn btn-block btn-lg btn-primary">送出</button>
+                <button type="button" id="btnans4" class="btn btn-block btn-lg btn-primary">送出</button>
               </div>
             </div>
           </form>
@@ -129,10 +129,10 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="ans3" type="text" class="form-control form-control-lg" placeholder="">
+                <input id="ans5" type="text" class="form-control form-control-lg" placeholder="">
               </div>
               <div class="col-12 col-md-3">
-                <button type="button" id="btnans3" class="btn btn-block btn-lg btn-primary">送出</button>
+                <button type="button" id="btnans5" class="btn btn-block btn-lg btn-primary">送出</button>
               </div>
             </div>
           </form>
@@ -150,10 +150,10 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="ans3" type="text" class="form-control form-control-lg" placeholder="">
+                <input id="ans6" type="text" class="form-control form-control-lg" placeholder="">
               </div>
               <div class="col-12 col-md-3">
-                <button type="button" id="btnans3" class="btn btn-block btn-lg btn-primary">送出</button>
+                <button type="button" id="btnans6" class="btn btn-block btn-lg btn-primary">送出</button>
               </div>
             </div>
           </form>
@@ -171,10 +171,10 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="ans3" type="text" class="form-control form-control-lg" placeholder="">
+                <input id="ans7" type="text" class="form-control form-control-lg" placeholder="">
               </div>
               <div class="col-12 col-md-3">
-                <button type="button" id="btnans3" class="btn btn-block btn-lg btn-primary">送出</button>
+                <button type="button" id="btnans7" class="btn btn-block btn-lg btn-primary">送出</button>
               </div>
             </div>
           </form>
@@ -192,10 +192,10 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="ans3" type="text" class="form-control form-control-lg" placeholder="">
+                <input id="ans8" type="text" class="form-control form-control-lg" placeholder="">
               </div>
               <div class="col-12 col-md-3">
-                <button type="button" id="btnans3" class="btn btn-block btn-lg btn-primary">送出</button>
+                <button type="button" id="btnans8" class="btn btn-block btn-lg btn-primary">送出</button>
               </div>
             </div>
           </form>
@@ -213,10 +213,10 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="ans3" type="text" class="form-control form-control-lg" placeholder="">
+                <input id="ans9" type="text" class="form-control form-control-lg" placeholder="">
               </div>
               <div class="col-12 col-md-3">
-                <button type="button" id="btnans3" class="btn btn-block btn-lg btn-primary">送出</button>
+                <button type="button" id="btnans9" class="btn btn-block btn-lg btn-primary">送出</button>
               </div>
             </div>
           </form>
@@ -234,10 +234,10 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="ans3" type="text" class="form-control form-control-lg" placeholder="">
+                <input id="ans10" type="text" class="form-control form-control-lg" placeholder="">
               </div>
               <div class="col-12 col-md-3">
-                <button type="button" id="btnans3" class="btn btn-block btn-lg btn-primary">送出</button>
+                <button type="button" id="btnans10" class="btn btn-block btn-lg btn-primary">送出</button>
               </div>
             </div>
           </form>
@@ -249,7 +249,7 @@
       <div class="row">
         <div class="col-xl-9 mx-auto">
           <h1 class="mb-5">恭喜全部答對！</h1>
-          <h1 class="mb-5">請出示此畫面給母GG看</h1>
+          <h1 class="mb-5">請出示此畫面給櫃台人員看</h1>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form>
@@ -309,39 +309,125 @@
       }
       else
       {
-        //alert("答錯囉...");
         $("#ans1").val("");
         $("#ans1").attr("placeholder","答錯囉...再想想")
       }
     })
     $("#btnans2").on("click", function(){
-      if($("#ans2").val() == "醜")
+      if($("#ans2").val() == "3")
       {
-        alert("答對了!");
         $("#q2").hide();
         $("#q3").show();
         $("#ans2").val("");
       }
       else
       {
-        alert("答錯囉...");
         $("#ans2").val("");
-        $("#ans2").attr("placeholder","提示: 醜")
+        $("#ans2").attr("placeholder","答錯囉...再想想")
       }
     })
     $("#btnans3").on("click", function(){
-      if($("#ans3").val() == "帥")
+      if($("#ans3").val() == "Y4")
       {
-        alert("答對了!");
         $("#q3").hide();
         $("#q4").show();
         $("#ans3").val("");
       }
       else
       {
-        alert("答錯囉...");
         $("#ans3").val("");
-        $("#ans3").attr("placeholder","提示: 帥")
+        $("#ans3").attr("placeholder","答錯囉...再想想")
+      }
+    })
+    $("#btnans4").on("click", function(){
+      if($("#ans4").val() == "4")
+      {
+        $("#q4").hide();
+        $("#q5").show();
+        $("#ans4").val("");
+      }
+      else
+      {
+        $("#ans4").val("");
+        $("#ans4").attr("placeholder","答錯囉...再想想")
+      }
+    })
+    $("#btnans5").on("click", function(){
+      if($("#ans5").val() == "5")
+      {
+        $("#q5").hide();
+        $("#q6").show();
+        $("#ans5").val("");
+      }
+      else
+      {
+        $("#ans5").val("");
+        $("#ans5").attr("placeholder","答錯囉...再想想")
+      }
+    })
+    $("#btnans6").on("click", function(){
+      if($("#ans6").val() == "6")
+      {
+        $("#q6").hide();
+        $("#q7").show();
+        $("#ans6").val("");
+      }
+      else
+      {
+        $("#ans6").val("");
+        $("#ans6").attr("placeholder","答錯囉...再想想")
+      }
+    })
+    $("#btnans7").on("click", function(){
+      if($("#ans7").val() == "7")
+      {
+        $("#q7").hide();
+        $("#q8").show();
+        $("#ans7").val("");
+      }
+      else
+      {
+        $("#ans7").val("");
+        $("#ans7").attr("placeholder","答錯囉...再想想")
+      }
+    })
+    $("#btnans8").on("click", function(){
+      if($("#ans8").val() == "29770755")
+      {
+        $("#q8").hide();
+        $("#q9").show();
+        $("#ans8").val("");
+      }
+      else
+      {
+        $("#ans8").val("");
+        $("#ans8").attr("placeholder","答錯囉...再想想")
+      }
+    })
+    $("#btnans9").on("click", function(){
+      if($("#ans9").val() == "Check Rubik Cube")
+      {
+        $("#q9").hide();
+        $("#q10").show();
+        $("#ans10").val("");
+      }
+      else
+      {
+        $("#ans9").val("");
+        $("#ans9").attr("placeholder","答錯囉...再想想")
+      }
+    })
+    $("#btnans10").on("click", function(){
+      if($("#ans10").val() == "")
+      {
+        $("#q10").hide();
+        $("#end").show();
+        $("#ans10").val("");
+      }
+      else
+      {
+        $("#ans10").val("");
+        $("#ans10").attr("placeholder","答錯囉...再想想")
       }
     })
   </script>
